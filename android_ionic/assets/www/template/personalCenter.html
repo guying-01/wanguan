@@ -1,0 +1,43 @@
+<common-header>
+  万贯五金机电
+</common-header>
+<scroll-top></scroll-top>
+<ion-view>
+  <ion-content on-swipe-right="onSwipeRight();">
+     <ion-list>
+       <ion-item class="item-divider">
+       	   个人信息
+       </ion-item>
+
+       <ion-item class="item-avatar-left">
+         <img src="img/avatar.jpg" alt="" class="avatar">
+         <p>{{userName}}</p>
+         <!--<p><span>账户余额：</span><span>54646546465</span>元</p>-->
+
+       </ion-item>
+         <div class="button-bar bar-light">
+           <button class="button button-small"  style="border-bottom: 0"><p style="margin-bottom: 0">库存总量</p><p style="margin-bottom: 0">{{inventory.total1}}</p></button>
+           <button class="button button-small"  style="border-bottom: 0"><p style="margin-bottom: 0">库存成本</p><p style="margin-bottom: 0">{{inventory.total2}}</p></button>
+         </div>
+         
+        <div class="button-bar bar-light">
+           <button class="button button-small"  style="border-bottom: 0"><p style="margin-bottom: 0">客户欠款</p><p style="margin-bottom: 0">{{contact.total1}}</p></button>
+           <button class="button button-small"  style="border-bottom: 0"><p style="margin-bottom: 0">供应商欠款</p><p style="margin-bottom: 0">{{contact.total2}}</p></button>
+         </div>
+         
+        <div class="button-bar bar-light">
+           <button class="button button-small"><p style="margin-bottom: 0">本月销售收入</p><p style="margin-bottom: 0">{{sales.total1}}</p></button>
+           <button class="button button-small"><p style="margin-bottom: 0">本月商品毛利</p><p style="margin-bottom: 0">{{sales.total2}}</p></button>
+         </div>
+       <ion-item class="item-divider">
+         关于
+       </ion-item>
+       <ion-item>
+         当前版本 <span class="item-note">1.0.0</span>
+       </ion-item>
+       <ion-item>
+                  联系我们 <span class="item-note">+86123456789</span>
+       </ion-item>
+     </ion-list>
+  </ion-content>
+</ion-view>

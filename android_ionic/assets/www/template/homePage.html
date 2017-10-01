@@ -1,0 +1,45 @@
+<script src="../../../wechat/www/js/routes.js"></script>
+<common-header>
+   万贯五金机电
+</common-header>
+<ion-view>
+  <ion-content on-swipe-left="onSwipeLeft()">
+    <div class="bar bar-header item-input-inset">
+      <label class="item-input-wrapper">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+        <input type="search" placeholder="库存查询">
+      </label>
+      <button class="button button-assertive">查询</button>
+    </div>
+    <ion-list>
+      <ion-item class="item-divider item-positive">
+        <i class="icon ion-ios-undo-outline"></i>
+        采购
+      </ion-item>
+      <div class="button-bar bar-light">
+        <button class="button">采购入库</button>
+        <button class="button"></button>
+      </div>
+      <ion-item class="item-divider item-calm">
+        <i class="icon ion-ios-redo-outline"></i>
+        销货
+      </ion-item>
+      <div class="button-bar bar-light">
+        <button class="button">销货出库</button>
+        <button class="button"></button>
+      </div>
+      <ion-item class="item-divider item-balanced">
+        <i class="icon ion-calculator"></i>
+        库存
+      </ion-item>
+      <div class="button-bar bar-light">
+        <button class="button" style="border-bottom: 0">仓库调拨</button>
+        <button class="button" style="border-bottom: 0" >库存盘点</button>
+      </div>
+      <div class="button-bar bar-light">
+        <button class="button">其他入库</button>
+        <button class="button">其他出库</button>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>

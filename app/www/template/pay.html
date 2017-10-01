@@ -1,0 +1,20 @@
+<common-header>支付中心</common-header>
+<ion-content class="has-header has-footer" on-swipe-right="onSwipeRight()">
+  <p class="item text-right">
+    合计：{{totalPrice}}元&nbsp;&nbsp;实付：<input type="text" ng-model="money.finalTotalPrice" style="display: inline-block;max-width:60px;text-overflow:ellipsis;text-align: center;color: #fff;background: #e42112">元
+  </p>
+  {{finalTotalPrice}}
+  <ion-list>
+    <ion-item ng-repeat="x in goodsList" class="item-avatar-left">
+      <img src={{x.url||"img/default.jpg"}} alt="">
+      <p>{{x.name}}</p>
+      <p>期初数：{{x.iniqty}}</p>
+      <p>当前库存：{{x.totalqty}}</p>
+      <span style="color:#ef473a">单价：{{x.salePrice}}元/{{x.unitName}}</span>
+      <span class="" style="float: right">×{{x.num}}</span>
+
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+<button class="button button-block button-assertive" style="bottom: 0;position: absolute;margin-bottom: 0;border-radius:0" ng-click="">立即支付</button>

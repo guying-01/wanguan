@@ -1,0 +1,79 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+#pay-header{
+	width: 100%;
+	height: 100%;
+	border:0.01rem solid #ccc;
+}
+.all{
+	width: 90%;
+	height: 90%;
+	margin: 0.5rem auto;
+	border:0.01rem solid #ccc;
+	padding: 0.02rem; 
+}
+.all .content{
+	width: 96%;
+	height: 96%;
+	margin: 3% 2%;
+	border:0.01rem solid #ccc;
+}
+.all .top{
+	width: 95%;
+	height: 30%;
+	font-size: 0.5rem;
+	text-align: center; 
+	overflow: hidden;
+	/*border:0.01rem solid #ccc;*/
+	margin: 0 auto;
+}
+.top p.weixin{
+	margin-top: 1rem;
+	margin-bottom: 0.3rem;
+}
+.center{
+	width: 6.3rem;
+	height: 4.9rem;
+	/*border:0.01rem solid #ccc;*/
+	margin: 0 auto;
+	background: green;
+}
+.center img{
+	width: 2.5rem;
+	height: 2.5rem;
+	margin: 1.2rem 1.9rem;
+	display: inline-block;
+}
+.bottom{
+	width:95%;
+	height: 25%;
+	/*border:0.01rem solid #ccc;*/
+	margin: 10% auto;
+}
+.bottom ul {
+	width: 100%;
+	height: 100%;
+	list-style: none;
+}
+.bottom ul li{
+	width: 20%;
+	height: 100%;
+	float: left;
+	font-size: 0.1rem;
+	text-align: center;
+}
+.bottom ul li p{
+	height: 0.5rem;
+}
+.bottom ul li img{
+	width: 0.5rem;
+	height: 0.5rem;
+	border:none;
+	margin-top: 0.8rem
+}

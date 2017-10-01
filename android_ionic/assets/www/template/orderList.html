@@ -1,0 +1,35 @@
+<script src="../../../android/android/assets/www/js/common/common.js"></script>
+<common-header>
+  万贯五金机电
+</common-header>
+<scroll-top></scroll-top>
+<ion-view>
+  <ion-tabs class="tabs-top">
+    <ion-tab title="所有订单"   on-select="onTabSelected(3)"></ion-tab>
+    <ion-tab title="未收款"     on-select="onTabSelected(0)"></ion-tab>
+    <ion-tab title="部分付款"   on-select="onTabSelected(1)"></ion-tab>
+    <ion-tab title="全部付款"   on-select="onTabSelected(2)"></ion-tab>
+  </ion-tabs>
+  <ion-content  on-swipe-left="onSwipeLeft();" on-swipe-right="onSwipeRight();" class="has-header has-tabs-top">
+    <ion-list>
+     <div ng-repeat="x in orderList">
+       <ion-item class="item-divider">
+         <p><span>单据编号：</span><span>{{x.billNo}}</span></p>
+       </ion-item>
+       <ion-item>
+          <p class="row"><span class="col col-33 text-right">单据日期：</span><span class="col col-66">{{x.billDate}}</span></p>
+          <p class="row"><span class="col col-33 text-right">销售金额：</span><span class="col col-66">{{x.totalAmount}}</span></p>
+          <p class="row"><span class="col col-33 text-right">优惠后金额：</span><span class="col col-66">{{x.amount}}</span></p>
+          <p class="row" ng-switch="x.hxStateCode">
+            <span class="col col-33 text-right">收款状态：</span>
+            <span ng-switch-when="0" class="col col-66">未收款</span>
+            <span ng-switch-when="1" class="col col-66">部分收款</span>
+            <span ng-switch-when="2" class="col col-66">全部收款</span>
+          </p>
+          <p class="row"><span class="col col-33 text-right">操作员：</span><span class="col col-66">{{x.userName}}</span></p>
+          <p style="display: none"><span>订单ID：</span><span></span></p>
+      </ion-item>
+     </div>
+    </ion-list>
+  </ion-content>
+</ion-view>

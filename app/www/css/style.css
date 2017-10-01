@@ -1,0 +1,34 @@
+/* Empty. Add your own CSS if you like */
+.box.banner{
+  height: 170px;
+}
+.box.banner img{
+  width: 100%;
+  height: 100%;
+}
+.img-box img{
+  width: 100%;
+  height: 70px;
+}
+.productList ul li.active{
+  background: #afafb0;
+}
+.scrollTop{
+  position: fixed;
+  right: 0.35rem;
+  bottom: 60px;
+  background: #fff url("../img/main/scrollTop.png") no-repeat center;
+  background-size: contain;
+  color: #fff;
+  /*display: none;*/
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 0.7;
+  border: 1px solid #e67262;
+  z-index: 999;
+}
+.avatar{
+  width: 50px;
+  height: 50px;
+}
